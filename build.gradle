@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group 'ml.chillgaming.spigotcommandannotations'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://hub.spigotmc.org/nexus/content/repositories/snapshots"
+    }
+}
+
+dependencies {
+    implementation "org.spigotmc:spigot-api:1.16.4-R0.1-SNAPSHOT"
+    testImplementation(platform('org.junit:junit-bom:5.7.0'))
+    testImplementation('org.junit.jupiter:junit-jupiter')
+    testImplementation 'org.mockito:mockito-core:3.6.0'
+    testImplementation 'org.mockito:mockito-junit-jupiter:3.6.0'
+}
+
+test {
+    useJUnitPlatform()
+    testLogging {
+        events "passed", "skipped", "failed"
+    }
+}

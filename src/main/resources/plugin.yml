@@ -1,0 +1,5 @@
+name: SpigotCommandAnnotations
+main: ml.chillgaming.spigotcommandannotations.SpigotCommandAnnotationsPlugin
+version: 1.0.0-Snapshot
+api-version: 1.16.4
+description: An annotation based command framework for Spigot.
